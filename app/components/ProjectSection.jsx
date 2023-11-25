@@ -29,7 +29,7 @@ const projectsData = [
     title: 'Employees Record',
     description:
       'This application is a good example of employees record that can be adopted by an organization to handle the record of its employees. It gives information about the employees regarding their names, date joined, role, level, country, their various departments in the organization and so much more.',
-    image: '/images/project3.png',
+    image: '/images/project5.png',
     tag: ["All", "Mobile"],
     gitUrl: 'https://github.com/uferekalu/records',
     previewUrl: 'https://employees-hazel.vercel.app/',
