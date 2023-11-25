@@ -25,7 +25,7 @@ const projectsData = [
     id: 3,
     title: 'Employees Record',
     description:
-      'This application is a good example of employees record that can be adopted by an organization to handle the record of its employees. It gives information about the employees regarding their names, date joined, role, level, country, their various departments in the organization and so much more. The major highlights of the application include searching by name, id, role, sorting by their various levels and filtering to narrow the data to a particular employee details. Furthermore, pagination was implemented for ease of handling of data. This was developed by adopting TDD (Test-Driven Development) method and the stack used includes ReactJS, JavaScript, NextJS, NodeJS. The application can be improved by incorporating a state management application like Redux and that said, there was lots of prop-drilling to get data across to different components.',
+      'This application is a good example of employees record that can be adopted by an organization to handle the record of its employees. It gives information about the employees regarding their names, date joined, role, level, country, their various departments in the organization and so much more.',
     image: '/images/project3.png',
     tag: ['All', 'web'],
     gitUrl: "https://github.com/uferekalu/records",
@@ -45,7 +45,7 @@ const projectsData = [
 
 const ProjectSection = () => {
   return (
-    <div id='projects'>
+    <div id='projects' className='mt-10 md:mt-14'>
       <h1 className='flex justify-center items-center p-3 text-lg font-semibold'>My Projects</h1>
       <div className='grid md:grid-cols-3 gap-10 bg-slate-600 p-5 rounded-lg'>
         {projectsData.map((project) => (

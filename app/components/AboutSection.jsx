@@ -109,59 +109,55 @@ const AboutSection = () => {
     });
   };
   return (
-    <section id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <div className="relative w-full h-full">
-          <div className="absolute inset-0">
-            <Image
-              src={'/images/about.jpeg'}
-              alt="about-pic"
-              width={500}
-              height={500}
-            />
-          </div>
-        </div>
-        <div className="mt-40 lg:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl mt-4 sm:mt-0 font-bold mb-4">About Me</h2>
-          <p
-            style={{
-              fontSize: '12px',
-            }}
-            className=" md:text-lg text-justify"
+    <section id="about" className="md:flex gap-10 mt-12">
+      <Image
+        style={{
+          maxWidth: '100%',
+          height: 'auto',
+        }}
+        src={'/images/about.jpeg'}
+        alt="about-pic"
+        width={400}
+        height={200}
+        className="flex justify-center items-center"
+      />
+      <div className="mt-7 text-left flex flex-col h-full">
+        <h2 className="text-2xl mt-4 sm:mt-0 font-bold mb-4">About Me</h2>
+        <p
+          style={{
+            fontSize: '12px',
+          }}
+          className=" md:text-lg text-justify"
+        >
+          {' '}
+          I am a Full Stack JavaScript Developer with years of experience in
+          developing and transfering product ideas to real application by
+          adopting industrial standards that aid in scalability and maintenance
+          of the application. I have great passion in getting optimal results by
+          executing my tasks within the designated timeframe and I am equally
+          teachable and always willing to learn and welcome ideas.
+        </p>
+        <div className="flex flex-row mt-8 justify-start">
+          <TabButton
+            selectTab={() => handleTabChange('skills')}
+            active={tab === 'skills'}
           >
-            {' '}
-            I am a Full Stack JavaScript Developer with years of experience in
-            developing and transfering product ideas to real application by
-            adopting industrial standards that aid in scalability and
-            maintenance of the application. I have great passion in getting
-            optimal results by executing my tasks within the designated
-            timeframe and I am equally teachable and always willing to learn and
-            welcome ideas.
-          </p>
-          <div className="flex flex-row mt-8 justify-start">
-            <TabButton
-              selectTab={() => handleTabChange('skills')}
-              active={tab === 'skills'}
-            >
-              Skills
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange('education')}
-              active={tab === 'education'}
-            >
-              Education
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange('experience')}
-              active={tab === 'experience'}
-            >
-              Exprience
-            </TabButton>
-          </div>
-          <div className="mt-4">
-            {TAB_DATA.find((t) => t.id === tab).content}
-          </div>
+            Skills
+          </TabButton>
+          <TabButton
+            selectTab={() => handleTabChange('education')}
+            active={tab === 'education'}
+          >
+            Education
+          </TabButton>
+          <TabButton
+            selectTab={() => handleTabChange('experience')}
+            active={tab === 'experience'}
+          >
+            Exprience
+          </TabButton>
         </div>
+        <div className="mt-4">{TAB_DATA.find((t) => t.id === tab).content}</div>
       </div>
     </section>
   );
