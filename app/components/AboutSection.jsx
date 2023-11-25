@@ -137,7 +137,7 @@ const AboutSection = () => {
           executing my tasks within the designated timeframe and I am equally
           teachable and always willing to learn and welcome ideas.
         </p>
-        <div className="flex flex-row mt-8 justify-start">
+        <div className="flex flex-row justify-start">
           <TabButton
             selectTab={() => handleTabChange('skills')}
             active={tab === 'skills'}
@@ -157,7 +157,7 @@ const AboutSection = () => {
             Exprience
           </TabButton>
         </div>
-        <div className="mt-4">{TAB_DATA.find((t) => t.id === tab).content}</div>
+        <div className="">{TAB_DATA.find((t) => t.id === tab).content}</div>
       </div>
     </section>
   );

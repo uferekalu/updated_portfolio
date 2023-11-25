@@ -1,7 +1,12 @@
 import AboutSection from './components/AboutSection'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import ContactSection from './components/ContactSection'
 import HeroSection from './components/HeroSection'
 import Navbar from './components/Navbar'
 import ProjectSection from './components/ProjectSection'
+import Footer from './components/Footer';
+
 
 export default function Home() {
   return (
@@ -11,7 +16,9 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <ProjectSection />
+        <ContactSection />
       </div>
+      <Footer />
     </main>
-  )
+    )
 }

@@ -64,8 +64,8 @@ const ProjectSection = () => {
     animate: { y: 0, opacity: 1 },
   };
   return (
-    <div id="projects" className="mt-10 md:mt-14">
-      <h1 className="flex justify-center items-center p-3 text-lg font-semibold">
+    <div id="projects" className="mt-4">
+      <h1 className="flex justify-center items-center text-lg font-semibold">
         My Projects
       </h1>
       <div className="flex flex-row justify-center items-center gap-2 py-6">
@@ -85,7 +85,7 @@ const ProjectSection = () => {
           isSelected={tag === 'Mobile'}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12 bg-slate-600 p-5 rounded-lg">
+      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12 bg-slate-600 p-2 rounded-lg">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
