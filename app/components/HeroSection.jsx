@@ -2,8 +2,16 @@
 import Image from 'next/image';
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
+import fileDownload from 'js-file-download';
 
 const HeroSection = () => {
+  const handleDownloadCV = async () => {
+    const cvFileName = 'updated_cv.pdf';
+    const cvFilePath = '/';
+  
+    // Trigger the file download
+    fileDownload(cvFilePath, cvFileName);
+  };
   return (
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12 sm:gap-7">
@@ -38,7 +46,10 @@ const HeroSection = () => {
           <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
             Hire Me
           </button>
-          <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 hover:text-white text-white border border-black mt-4">
+          <button
+            onClick={handleDownloadCV}
+            className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 hover:text-white text-white border border-black mt-4"
+          >
             <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
               Download CV
             </span>
