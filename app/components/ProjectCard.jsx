@@ -29,9 +29,14 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
       </div>
       <div className="rounded-b-xl bg-[#f9f6f6] py-6 px-4">
         <h5 className="text-sm font-semibold mb-2">{title}</h5>
-        <p style={{
-          fontSize: '11px'
-        }} className="text-justify">{description}</p>
+        <p
+          style={{
+            fontSize: '11px',
+          }}
+          className="text-justify"
+        >
+          {description}
+        </p>
       </div>
     </div>
   );

@@ -3,14 +3,40 @@ import Image from 'next/image';
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import fileDownload from 'js-file-download';
+import path from 'path'
 
 const HeroSection = () => {
   const handleDownloadCV = async () => {
-    const cvFileName = 'updated_cv.pdf';
-    const cvFilePath = '/';
-  
-    // Trigger the file download
-    fileDownload(cvFilePath, cvFileName);
+    try {
+      const response = await fetch('http://localhost:5000/download-pdf');
+
+      if (response.ok) {
+        // Create a Blob from the response data
+        const blob = await response.blob();
+
+        // Create a link element
+        const link = document.createElement('a');
+
+        // Set the download attribute with the desired file name
+        link.download = 'cv.pdf';
+
+        // Create a URL for the Blob and set it as the link's href
+        link.href = URL.createObjectURL(blob);
+
+        // Append the link to the document
+        document.body.appendChild(link);
+
+        // Trigger a click on the link to start the download
+        link.click();
+
+        // Remove the link from the document
+        document.body.removeChild(link);
+      } else {
+        console.error('Error downloading PDF:', response.statusText);
+      }
+    } catch (error) {
+      console.error('Error:', error.message);
+    }
   };
   return (
     <section>

@@ -7,6 +7,16 @@ import ProjectTag from './ProjectTag';
 const projectsData = [
   {
     id: 1,
+    title: 'Random User App',
+    description:
+      'This is an application that uses a custom React Hook to fetch users from Random User API and displays the picture and their name on the page one. It shows the current user and a button for fetching the next user and a buttton for moving back to the previous user.',
+    image: '/images/project6.png',
+    tag: ["All", "Web"],
+    gitUrl: 'https://github.com/uferekalu/randomuser',
+    previewUrl: 'https://kalu-randomuser.vercel.app/',
+  },
+  {
+    id: 2,
     title: 'Payroll Management System',
     description:
       'This is a payroll management system. It consists majorly of two sections in Elements and ElementLinks. You can create, update, delete and see various elements details and equally create related Element Links. ',
@@ -16,7 +26,7 @@ const projectsData = [
     previewUrl: 'https://kalu-ufere-softsuite-test.vercel.app/',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Hotel Booking UI',
     description: 'This is a UI for a hotel booking',
     image: '/images/project2.png',
@@ -25,7 +35,7 @@ const projectsData = [
     previewUrl: 'https://hotel-booking-sepia.vercel.app/',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Employees Record',
     description:
       'This application is a good example of employees record that can be adopted by an organization to handle the record of its employees. It gives information about the employees regarding their names, date joined, role, level, country, their various departments in the organization and so much more.',
@@ -35,7 +45,7 @@ const projectsData = [
     previewUrl: 'https://employees-hazel.vercel.app/',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Logistics Application',
     description:
       "The project is a Driving and Car Clearing App with NextJs and ReactJs. It's a comprehensive app with various modules as Driver dashboard, customer module, admin panel, agent module, clearing and forwarding module and lot more",
