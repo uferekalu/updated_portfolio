@@ -6,7 +6,9 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
   return (
     <div className="">
       <div
-        style={{
+        style={title === "Quicksearch App" ? {
+          background: `url(${imgUrl}) center center/cover no-repeat`,
+        } :{
           background: `url(${imgUrl})`,
           backgroundSize: 'cover',
         }}
