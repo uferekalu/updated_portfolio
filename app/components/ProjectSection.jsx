@@ -12,7 +12,7 @@ const projectsData = [
       'A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.',
     image: '/images/quicksearchpic.png',
     tag: ["All", "Web"],
-    gitUrl: 'https://github.com/aakeu/QuickSearchWeb',
+    gitUrl: '',
     previewUrl: 'https://quicksearchplus.netlify.app/',
   },
   {
