@@ -5,16 +5,16 @@ import { motion, useInView } from 'framer-motion';
 import ProjectTag from './ProjectTag';
 
 const projectsData = [
-  // {
-  //   id: 1,
-  //   title: 'Quicksearch App',
-  //   description:
-  //     'A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.',
-  //   image: '/images/quicksearchpic.png',
-  //   tag: ["All", "Web"],
-  //   gitUrl: 'https://github.com/aakeu/QuickSearchWeb',
-  //   previewUrl: 'https://quicksearchplus.netlify.app/',
-  // },
+  {
+    id: 1,
+    title: 'Quicksearch App',
+    description:
+      'A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.',
+    image: '/images/quicksearchpic.png',
+    tag: ["All", "Web"],
+    gitUrl: '',
+    previewUrl: 'https://quicksearchplus.netlify.app/',
+  },
   {
     id: 2,
     title: 'Random User App',
