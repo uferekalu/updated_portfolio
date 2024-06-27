@@ -5,29 +5,29 @@ import { motion, useInView } from 'framer-motion';
 import ProjectTag from './ProjectTag';
 
 const projectsData = [
-  {
-    id: 2,
-    title: 'User Management Application',
-    description:
-      `The User Management System is a web application that allows administrators to manage users
-      efficiently. The key pages in the application are the Login, Dashboard, and User Detail pages.
-      This article covers the implementation details, including validation, filtering, searching, user
-      activation, blacklisting, and pagination`,
-    image: '/images/usermanagement.png',
-    tag: ["All", "Web"],
-    gitUrl: 'https://github.com/uferekalu/lendsqr-project',
-    previewUrl: 'https://kalu-ufere-lendsqr-fe-test.vercel.app/',
-  },
-  {
-    id: 1,
-    title: 'Quicksearch App',
-    description:
-      'A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.',
-    image: '/images/quicksearchpic.png',
-    tag: ["All", "Web"],
-    gitUrl: '',
-    previewUrl: 'https://quicksearchplus.netlify.app/',
-  },
+  // {
+  //   id: 2,
+  //   title: 'User Management Application',
+  //   description:
+  //     `The User Management System is a web application that allows administrators to manage users
+  //     efficiently. The key pages in the application are the Login, Dashboard, and User Detail pages.
+  //     This article covers the implementation details, including validation, filtering, searching, user
+  //     activation, blacklisting, and pagination`,
+  //   image: '/images/usermanagement.png',
+  //   tag: ["All", "Web"],
+  //   gitUrl: 'https://github.com/uferekalu/lendsqr-project',
+  //   previewUrl: 'https://kalu-ufere-lendsqr-fe-test.vercel.app/',
+  // },
+  // {
+  //   id: 1,
+  //   title: 'Quicksearch App',
+  //   description:
+  //     'A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.',
+  //   image: '/images/quicksearchpic.png',
+  //   tag: ["All", "Web"],
+  //   gitUrl: '',
+  //   previewUrl: 'https://quicksearchplus.netlify.app/',
+  // },
   {
     id: 2,
     title: 'Random User App',
